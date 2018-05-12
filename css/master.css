@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
-
 * {
   margin: 0;
   padding: 0;
@@ -17,22 +16,22 @@ a {
   color: #CBCBCB;
 }
 
-@media screen and (max-width: 768px){
-  .wrapper50{
+@media screen and (max-width: 768px) {
+  .wrapper50 {
     width: 500px;
     margin: auto;
   }
 }
 
-@media screen and (max-width: 1000px){
-  .wrapper50{
+@media screen and (max-width: 1000px) {
+  .wrapper50 {
     width: 700px;
     margin: auto;
   }
 }
 
-@media screen and (min-width: 1000px){
-  .wrapper50{
+@media screen and (min-width: 1000px) {
+  .wrapper50 {
     width: 1000px;
     margin: auto;
   }
@@ -64,7 +63,7 @@ a {
   float: left;
 }
 
-.top_menu .leftside img{
+.top_menu .leftside img {
   display: block;
   padding: 12px;
 }
@@ -131,42 +130,42 @@ a {
   font-family: cursive;
 }
 
-.content-2 table{
+.content-2 table {
   padding: 20px 0;
 }
 
-.content-2 td{
+.content-2 td {
   padding: 10px;
   width: 33%;
   vertical-align: top;
 }
 
-.content-2 td h3{
+.content-2 td h3 {
   padding: 10px 0;
   color: #799645;
   font-size: 32px;
 }
 
-.content-2 td p{
+.content-2 td p {
   padding: 0 5px;
   color: #948c87;
 }
 
-.content-2 td:nth-child(1){
+.content-2 td:nth-child(1) {
   text-align: justify;
-    text-align-last: left;
+  text-align-last: left;
 }
 
-.content-2 td:nth-child(2){
+.content-2 td:nth-child(2) {
   text-align: center;
 }
 
-.content-2 td:nth-child(3){
+.content-2 td:nth-child(3) {
   text-align: justify;
-    text-align-last: right;
+  text-align-last: right;
 }
 
-.content-3{
+.content-3 {
   padding: 30px;
   height: 200px;
   width: 100%;
@@ -174,36 +173,36 @@ a {
   color: #ffffff;
 }
 
-.content-3 .weeklyupdatething{
+.content-3 .weeklyupdatething {
   width: 500px;
 }
 
-.content-3 p{
+.content-3 p {
   padding: 20px;
 }
 
-.content-4{
-  height: 500px;
-  width: 100%;
+.content-4 {
+  background: #738D45;
+  border-radius:10px;
+}
+
+.devblog{
+  padding: 10px;
+}
+
+.devblog a h3.Title{
+  color: #222222;
+}
+
+.devblog a h3.Title:hover{
   color: #ffffff;
 }
 
-.content-4 .socialmedia{
-  float: right;
-  padding: 140px 0;
-  width: 500px;
+.content-5 {
+
 }
 
-.content-4 .socialmedia a{
-  font-weight: bold;
-  color: #948c87;
-}
-
-.content-4 p{
-  padding: 20px;
-}
-
-.footer{
+.footer {
   height: 200px;
   width: 100%;
 }
@@ -212,7 +211,7 @@ a {
   float: left;
 }
 
-.footer .leftside img{
+.footer .leftside img {
   display: block;
   padding: 12px;
 }
@@ -220,3 +219,21 @@ a {
 .footer .rightside {
   float: right;
 }
+
+.footer .rightside a {
+  float: right;
+  display: block;
+  color: #738D45;
+  font-size: 14px;
+}
+
+.footer .rightside a:hover {
+  color: #ffffff;
+}
+
+.footer .rightside ul {
+  padding: 20px 0;
+  list-style: none;
+}
+
+.footer .rightside li {}
