@@ -108,6 +108,15 @@ a {
   width: 100%;
 }
 
+#maincontent .content-1 .background-video {
+  position: absolute;
+  transform: scale(1.02);
+  filter: blur(5px);
+  z-index: -2;
+  opacity: 0.8;
+  width: 100%;
+}
+
 #maincontent .content-1 .background-video .opacitybarrier {
   position: absolute;
   height: 100%;
@@ -128,6 +137,15 @@ a {
   top: 35%;
   left: 50%;
   font-family: cursive;
+}
+
+.content-1 .title h1 {
+  text-align: center;
+  position: relative;
+  transform: translateY(-50%) translateX(-50%);
+  top: 35%;
+  left: 50%;
+  font-family: "Roboto";
 }
 
 .content-2 table {
@@ -182,7 +200,6 @@ a {
 }
 
 .content-4 {
-  background: #738D45;
   border-radius:10px;
 }
 
@@ -191,11 +208,43 @@ a {
 }
 
 .devblog a h3.Title{
-  color: #222222;
+  color: #738D45;
+  display: inline;
 }
 
 .devblog a h3.Title:hover{
   color: #ffffff;
+}
+
+.devblog_section{
+  padding: 5px 0;
+}
+
+.section_title{
+  color: #738D45;
+  display: inline;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.section_name{
+  display: inline-block;
+  color: #738D45;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.section_text{
+  padding: 10px 15px;
+  color: #948c87;
+}
+
+.devblog_section .sketchfab-embed-wrapper{
+  display: inline;
+}
+
+.devblog_section .sketchfab-embed-wrapper p{
+  display: inline-block;
 }
 
 .content-5 {
