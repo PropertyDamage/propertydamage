@@ -237,6 +237,7 @@ a {
 .section_text{
   padding: 10px 15px;
   color: #948c87;
+  text-align: justify;
 }
 
 .devblog_section .sketchfab-embed-wrapper{
