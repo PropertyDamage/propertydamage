@@ -16,10 +16,6 @@ a {
   color: #CBCBCB;
 }
 
-@keyframes backbutton {
-  
-}
-
 @media screen and (max-width: 768px) {
   .wrapper50 {
     width: 500px;
@@ -153,16 +149,18 @@ a {
 }
 
 .content-1 .titleandmenu table td {
+  height: 50px;
   width: 100%;
 }
 
-.content-1 .titleandmenu table td a:hover {
-  color: #CBCBCB;
-  transition: color .3s
+.content-1 .titleandmenu table td a {
+  display: block;
+  transition: color .3s;
+    color: #CBCBCB;
 }
 
 .content-1 .titleandmenu table td a:hover {
-  color: #222222;
+  color: #ffffff;
 }
 
 .content-2 table {
