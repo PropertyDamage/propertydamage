@@ -9,6 +9,8 @@ body {
   color: #CBCBCB;
   font-family: "Roboto";
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -39,6 +41,7 @@ a {
 
 #overlay {
   position: fixed;
+  z-index: 10;
 }
 
 #maincontent {
@@ -68,16 +71,21 @@ a {
   padding: 12px;
 }
 
+.top_menu .leftside img:hover {
+  background-color: #880092;
+  filter: invert();
+}
+
 .top_menu .rightside {
   float: right;
 }
 
 .top_menu .rightside a {
   height: 32px;
-  padding: 10px;
+  padding: 11px;
   text-align: center;
   vertical-align: middle;
-  display: block;
+  display: inline-block;
 }
 
 .top_menu .rightside a:hover {
@@ -106,15 +114,14 @@ a {
   z-index: -2;
   opacity: 0.8;
   width: 100%;
+  overflow: hidden;
 }
 
-#maincontent .content-1 .background-video {
-  position: absolute;
-  transform: scale(1.02);
-  filter: blur(5px);
-  z-index: -2;
-  opacity: 0.8;
+#maincontent .content-1 .hiddenoverflow {
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
 }
 
 #maincontent .content-1 .background-video .opacitybarrier {
@@ -125,27 +132,50 @@ a {
   z-index: 0;
 }
 
-.content-1 .title {
+.content-1 .titleandmenu {
   height: 100%;
   width: 100%;
 }
 
-.content-1 .title img {
+.content-1 .titleandmenu table {
   text-align: center;
   position: relative;
   transform: translateY(-50%) translateX(-50%);
   top: 35%;
   left: 50%;
-  font-family: cursive;
+  width: 50%;
+  height: 50%;
 }
 
-.content-1 .title h1 {
+.content-1 .titleandmenu h1 {
   text-align: center;
   position: relative;
   transform: translateY(-50%) translateX(-50%);
   top: 35%;
   left: 50%;
   font-family: "Roboto";
+}
+
+.content-1 .titleandmenu table td {
+  height: 50px;
+  width: 100%;
+}
+
+.content-1 .titleandmenu table td a {
+  display: block;
+  transition: color .3s;
+  color: #CBCBCB;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 20px;
+  box-sizing: content-box;
+  border: 2px solid #00000000;
+}
+
+.content-1 .titleandmenu table td a:hover {
+  color: #ffffff;
+  border: 2px solid #CBCBCBFF;
+  transition: border 0.7s ease-out;
 }
 
 .content-2 table {
@@ -184,7 +214,7 @@ a {
 }
 
 .content-3 {
-  padding: 30px;
+  padding: 30px 0;
   height: 200px;
   width: 100%;
   background: #738D45;
@@ -200,57 +230,55 @@ a {
 }
 
 .content-4 {
-  border-radius:10px;
+  border-radius: 10px;
 }
 
-.devblog{
+.devblog {
   padding: 10px;
 }
 
-.devblog a h3.Title{
+.devblog a h3.Title {
   color: #738D45;
   display: inline;
 }
 
-.devblog a h3.Title:hover{
+.devblog a h3.Title:hover {
   color: #ffffff;
 }
 
-.devblog_section{
+.devblog_section {
   padding: 5px 0;
 }
 
-.section_title{
+.section_title {
   color: #738D45;
   display: inline;
   font-size: 30px;
   line-height: 30px;
 }
 
-.section_name{
+.section_name {
   display: inline-block;
   color: #738D45;
   font-size: 15px;
   padding-bottom: 5px;
 }
 
-.section_text{
+.section_text {
   padding: 10px 15px;
   color: #948c87;
   text-align: justify;
 }
 
-.devblog_section .sketchfab-embed-wrapper{
+.devblog_section .sketchfab-embed-wrapper {
   display: inline;
 }
 
-.devblog_section .sketchfab-embed-wrapper p{
+.devblog_section .sketchfab-embed-wrapper p {
   display: inline-block;
 }
 
-.content-5 {
-
-}
+.content-5 {}
 
 .footer {
   height: 200px;
