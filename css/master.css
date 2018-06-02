@@ -70,16 +70,21 @@ a {
   padding: 12px;
 }
 
+.top_menu .leftside img:hover {
+  background-color: #880092;
+  filter: invert();
+}
+
 .top_menu .rightside {
   float: right;
 }
 
 .top_menu .rightside a {
   height: 32px;
-  padding: 10px;
+  padding: 11px;
   text-align: center;
   vertical-align: middle;
-  display: block;
+  display: inline-block;
 }
 
 .top_menu .rightside a:hover {
@@ -159,10 +164,17 @@ a {
   display: block;
   transition: color .3s;
   color: #CBCBCB;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 20px;
+  box-sizing: content-box;
+  border: 2px solid #00000000;
 }
 
 .content-1 .titleandmenu table td a:hover {
   color: #ffffff;
+  border: 2px solid #CBCBCBFF;
+  transition: border 0.7s ease-out;
 }
 
 .content-2 table {
