@@ -229,8 +229,11 @@ a {
   padding: 20px;
 }
 
-.content-4 {
-  border-radius: 10px;
+.content-4 {}
+
+.content-4 p {
+  padding: 10px 15px;
+  text-align: justify;
 }
 
 .devblog {
@@ -279,6 +282,41 @@ a {
 }
 
 .content-5 {}
+
+.content-5 table {
+  width: 100%;
+}
+
+.content-5 table tr {}
+
+.content-5 table tr td {
+  width: 33%;
+  text-align: center;
+  padding: 20px;
+  vertical-align: bottom;
+}
+
+.content-5 .team_member{
+  padding: 5px;
+}
+
+.content-5 .member_position{
+}
+
+.content-5 .member_name a{
+  color: #738D45;
+  padding: 15px;
+}
+
+.content-5 .member_name a:hover{
+  color: #ffffffff;
+  transition: border 0.7s ease-out;
+}
+
+.content-5 .member_icon img{
+  border-radius: 50%;
+  border: #343434 solid 2px;
+}
 
 .footer {
   height: 200px;
