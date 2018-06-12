@@ -318,6 +318,12 @@ a {
   border: #343434 solid 2px;
 }
 
+.content-5 .hiddenmember{
+  filter: grayscale(1);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .footer {
   height: 200px;
   width: 100%;
