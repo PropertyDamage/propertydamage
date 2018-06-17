@@ -238,7 +238,23 @@ a {
 }
 
 .devblog {
-  padding: 10px;
+  padding: 5px;
+  border-left: #738D45 solid 3px;
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+  margin: 0;
+}
+
+.devblog.late {
+  padding: 5px;
+  border-left: #EA9010 dashed 3px;
+  margin: 0;
+}
+
+.devblog.masterpiece {
+  padding: 5px;
+  border-left: #009FFD inset 3px;
+  margin: 0;
 }
 
 .devblog a h3.Title {
@@ -248,6 +264,16 @@ a {
 
 .devblog a h3.Title:hover {
   color: #ffffff;
+}
+
+.devblog .Date {
+  color: #738D45;
+  display: inline-block;
+}
+
+.devblog .Aftertitle {
+  color: #738D45;
+  display: inline-block;
 }
 
 .devblog_section {
