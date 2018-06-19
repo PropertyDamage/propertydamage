@@ -129,7 +129,7 @@ a {
   transform: scale(1.02);
 }
 
-#maincontent .content-1 .background-video img{
+#maincontent .content-1 .background-video img {
   filter: blur(5px);
   z-index: -1;
   position: relative;
@@ -247,7 +247,7 @@ a {
   color: #ffffff;
 }
 
-.content-3 .weeklyupdatething {
+.content-3 .devblogthing {
   width: 500px;
 }
 
