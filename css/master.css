@@ -207,39 +207,63 @@ a {
   transition: border 0.7s ease-out;
 }
 
-.content-2 table {
-  padding: 20px 0;
+.content-2-container {
+  background: #343434;
 }
 
-.content-2 td {
-  padding: 10px;
-  width: 33%;
-  vertical-align: top;
+@media screen and (max-width: 750px) {
+  .content-2-container {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
 }
 
-.content-2 td h3 {
-  padding: 10px 0;
-  color: #799645;
-  font-size: 32px;
+@media screen and (max-width: 1000px) {
+  .content-2-container {
+    display: block;
+    width: 80%;
+    padding: 0 10%;
+  }
 }
 
-.content-2 td p {
-  padding: 0 5px;
+@media screen and (min-width: 1000px) {
+  .content-2-container {
+    display: block;
+    width: 40%;
+    padding: 0 30%;
+  }
+}
+
+.content-2 {
   color: #948c87;
+  padding: 40px 20px;
 }
 
-.content-2 td:nth-child(1) {
-  text-align: justify;
-  text-align-last: left;
-}
-
-.content-2 td:nth-child(2) {
+.content-2 h3 {
+  color: #738D45;
+  font-size: 52px;
   text-align: center;
 }
 
-.content-2 td:nth-child(3) {
-  text-align: justify;
-  text-align-last: right;
+.content-2 h3+p {
+  text-align: center;
+  color: #948c87;
+  font-size: 18px;
+}
+
+.content-2.devblogthing {
+}
+
+.content-2.devblogthing h3 {
+  font-size: 60px;
+  line-height: 65px;
+  color: #ffffff;
+}
+
+.content-2.devblogthing h3+p {
+  text-align: center;
+  color: #ffffff;
 }
 
 .content-3 {
@@ -252,6 +276,7 @@ a {
 
 .content-3 .devblogthing {
   width: 500px;
+  padding: 25px;
 }
 
 .content-3 p {
@@ -423,7 +448,7 @@ a {
   cursor: pointer;
 } */
 
-.popgallery{
+.popgallery {
   position: relative;
   height: 100%;
   width: 100%;
@@ -431,7 +456,7 @@ a {
   background: #000000cc;
 }
 
-.popgallery .back a{
+.popgallery .back a {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -447,7 +472,8 @@ a {
   font-size: 50px;
   box-shadow: black 0px 0px 5px;
 }
-.popgallery .element{
+
+.popgallery .element {
   position: relative;
   margin: auto;
   width: 80%;
