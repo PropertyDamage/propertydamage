@@ -6,6 +6,8 @@
   <title>Mycelium - Devblog 6</title>
   <link rel="stylesheet" href="../css/master.css">
   <link rel="shortcut icon" href="..\favicon.png">
+  <script src="../javascript/jquery.js" charset="utf-8"></script>
+  <script src="../javascript/gallery.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -62,8 +64,12 @@
         <h2 class="section_title">Map design</h2><br>
         <h3 class="section_name">Teslov and KeZeio</h3><br>
         <p class="section_text">We started working on some areas of the game, KeZeio made a bridge area and Teslov made a cemetery for the boners.</p>
-        <img src="https://media.discordapp.net/attachments/440383869049503746/456789747310919680/unknown.png" alt="" width="49%">
-        <img src="https://media.discordapp.net/attachments/440383869049503746/455402543787409418/unknown.png" alt="" width="49%">
+        <div class="gallery">
+          <div class="galleryrow">
+            <div class="galleryitem" onclick="open_gallery(this)"><img src="https://media.discordapp.net/attachments/440383869049503746/456789747310919680/unknown.png" alt="" width="100%"></div>
+            <div class="galleryitem" onclick="open_gallery(this)"><img src="https://media.discordapp.net/attachments/440383869049503746/455402543787409418/unknown.png" alt="" width="100%"></div>
+          </div>
+        </div>
       </section>
       <section class="devblog_section">
         <h2 class="section_title">Teslov's Boners</h2><br>
@@ -78,8 +84,12 @@
         <h2 class="section_title">Disgusting Surprise</h2><br>
         <h3 class="section_name">Teslov</h3><br>
         <p class="section_text">The slug from <a href="devblog003.html">Devblog 3</a> is back, with a little less coulored and more alive with animations. It now also know how to attack those nude peasents who just spawned.</p>
-        <img src="https://cdn.discordapp.com/attachments/440383869049503746/456566500032118805/garry.gif" alt="" width="49%">
-        <img src="https://media.discordapp.net/attachments/440383869049503746/456568786171068437/garry2.gif" alt="" width="49%">
+        <div class="gallery">
+          <div class="galleryrow">
+            <div class="galleryitem" onclick="open_gallery(this)"><img src="https://cdn.discordapp.com/attachments/440383869049503746/456566500032118805/garry.gif" alt="" width="100%"></div>
+            <div class="galleryitem" onclick="open_gallery(this)"><img src="https://media.discordapp.net/attachments/440383869049503746/456568786171068437/garry2.gif" alt="" width="100%"></div>
+          </div>
+        </div>
         <p class="section_text">Hope this disgusting slug creature makes up for the last devblog being late. We have also made other wildlife and some other are in development but we have decided to keep it secret for now</p>
       </section>
 
@@ -109,6 +119,16 @@
             <a href="https://trello.com/mossteam2">trello</a>
           </li>
         </ul>
+      </div>
+    </div>
+  </div>
+  <div class="templates" hidden>
+    <div class="popgallery">
+      <div class="back" onclick="close_gallery(this)">
+        <a>x</a>
+      </div>
+      <div class="element">
+
       </div>
     </div>
   </div>
