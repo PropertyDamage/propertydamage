@@ -87,8 +87,8 @@ a {
 }
 
 .top_menu .leftside img:hover {
-  background-color: #880092;
-  filter: invert();
+  background-color: #8C72BA;
+  filter: hue-rotate(180deg);
 }
 
 .top_menu .rightside {
