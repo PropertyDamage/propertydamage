@@ -211,6 +211,20 @@ a {
   background: #343434;
 }
 
+.content-1 .hiddenoverflow > h1 {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-family: "Roboto";
+  padding-bottom: 10px;
+}
+
+.content-1 .hiddenoverflow > h1 > p{
+  display: inline;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
 @media screen and (max-width: 750px) {
   .content-2-container {
     display: block;
@@ -252,8 +266,7 @@ a {
   font-size: 18px;
 }
 
-.content-2.devblogthing {
-}
+.content-2.devblogthing {}
 
 .content-2.devblogthing h3 {
   font-size: 60px;
@@ -417,6 +430,13 @@ a {
   filter: grayscale(1);
   opacity: 0.3;
   pointer-events: none;
+}
+
+.content-6 {
+  position: relative;
+  width: 90%;
+  height: 700px;
+  margin: auto;
 }
 
 .gallery {
