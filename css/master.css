@@ -449,6 +449,7 @@ a {
 .gallery .galleryitem {
   display: table-cell;
   padding: 5px 5px;
+  width: 50%;
 }
 
 .gallery .galleryrow {
@@ -461,6 +462,15 @@ a {
   outline: none;
   display: block;
   cursor: pointer;
+  height: inherit;
+  position: relative;
+}
+
+.gallery .gallerysubtitle{
+  display: block;
+  padding: 10px;
+  background: #CBCBCB20;
+  height: 100%;
 }
 
 /* .gallery .galleryitem img:hover {
