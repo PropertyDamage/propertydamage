@@ -211,6 +211,20 @@ a {
   background: #343434;
 }
 
+.content-1 .hiddenoverflow>h1 {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-family: "Roboto";
+  padding-bottom: 10px;
+}
+
+.content-1 .hiddenoverflow>h1>p {
+  display: inline;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
 @media screen and (max-width: 750px) {
   .content-2-container {
     display: block;
@@ -252,8 +266,7 @@ a {
   font-size: 18px;
 }
 
-.content-2.devblogthing {
-}
+.content-2.devblogthing {}
 
 .content-2.devblogthing h3 {
   font-size: 60px;
@@ -344,24 +357,47 @@ a {
   padding: 5px 0;
 }
 
-.section_title {
+.devblog_section .section_title {
   color: #738D45;
-  display: inline;
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.section_name {
+  font-size: 22px;
   display: inline-block;
-  color: #738D45;
-  font-size: 15px;
-  padding-bottom: 5px;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: #323232;
 }
 
-.section_text {
+.devblog_section .section_name {
+  color: #738D45;
+  font-size: 22px;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: darkgrey;
+  color: #323232;
+}
+
+.devblog_section .section_role {
+  color: #738D45;
+  font-size: 22px;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: darkgrey;
+  color: #323232;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.devblog_section .section_text {
   padding: 10px 15px;
   color: #948c87;
   text-align: justify;
+  padding: 20px;
 }
 
 .devblog_section .sketchfab-embed-wrapper {
@@ -419,6 +455,13 @@ a {
   pointer-events: none;
 }
 
+.content-6 {
+  position: relative;
+  width: 90%;
+  height: 700px;
+  margin: auto;
+}
+
 .gallery {
   position: relative;
   display: table;
@@ -429,6 +472,7 @@ a {
 .gallery .galleryitem {
   display: table-cell;
   padding: 5px 5px;
+  width: 50%;
 }
 
 .gallery .galleryrow {
@@ -441,6 +485,15 @@ a {
   outline: none;
   display: block;
   cursor: pointer;
+  height: inherit;
+  position: relative;
+}
+
+.gallery .gallerysubtitle {
+  display: block;
+  padding: 10px;
+  background: #CBCBCB20;
+  height: 100%;
 }
 
 /* .gallery .galleryitem img:hover {
@@ -479,6 +532,146 @@ a {
   width: 80%;
   padding: 2%;
   z-index: 0;
+}
+
+.teslovsnote {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #3C091950;
+}
+
+.teslovsnote .section_title {
+  font-size: 26px;
+  color: #738D45;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: #323232;
+}
+
+.teslovsnote .section_title.additions{
+  background: green;
+  color: #323232;
+}
+
+.teslovsnote .section_title.changes{
+  background: orange;
+  color: #323232;
+}
+
+.teslovsnote .section_title.deletions{
+  background: red;
+  color: #323232;
+}
+
+.teslovsnote .section_name {
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 18px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  transform: scale(1);
+  transition: padding 0.6s ease-in-out, transform 0.6s ease-in-out, filter 0.6s ease-in-out;
+}
+
+.teslovsnote .section_name.change {
+  background: orange;
+  color: #323232;
+}
+
+.teslovsnote .section_name.addition {
+  background: green;
+  color: #323232;
+}
+
+.teslovsnote .section_name.removal {
+  background: red;
+  color: #323232;
+}
+
+.teslovsnote .username {
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 18px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: darkgrey;
+  color: #323232;
+}
+
+.teslovsnote .userrole {
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 18px;
+  padding: 2px 7px;
+  margin: 7px 5px 7px auto;
+  background: darkgrey;
+  color: #323232;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.teslovsnote .userrole.programmer {
+  background: lightblue;
+}
+
+.teslovsnote .userrole.model {
+  background: purple;
+  color: white;
+}
+
+.devblog_section .section_role.programmer {
+  background: lightblue;
+}
+
+.devblog_section .section_role.model {
+  background: purple;
+  color: white;
+}
+
+.devblog_section .section_role.leadprogrammer {
+  background: #722F37;
+  color: white;
+}
+
+.teslovsnote .section_text {
+  text-align: justify;
+  padding: 0 0 7px 0;
+}
+
+.kezeiosnote{
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #7851a990;
+}
+
+.kezeiosnote .section_title {
+  font-size: 26px;
+  color: #738D45;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: #323232;
+}
+
+.kezeiosnote .section_name {
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 18px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: #7851a990;
+  transform: scale(1);
+  transition: padding 0.6s ease-in-out, transform 0.6s ease-in-out, filter 0.6s ease-in-out;
+}
+
+.kezeiosnote .section_text {
+  text-align: justify;
+  padding: 0 0 7px 0;
 }
 
 .footer {
