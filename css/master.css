@@ -548,6 +548,21 @@ a {
   background: #323232;
 }
 
+.teslovsnote .section_title.additions{
+  background: green;
+  color: #323232;
+}
+
+.teslovsnote .section_title.changes{
+  background: orange;
+  color: #323232;
+}
+
+.teslovsnote .section_title.deletions{
+  background: red;
+  color: #323232;
+}
+
 .teslovsnote .section_name {
   display: inline-block;
   border-radius: 2px;
