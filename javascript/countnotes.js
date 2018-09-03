@@ -20,4 +20,14 @@ $(document).ready(function() {
   $(".teslovsnote .section_title.additions span").text(scribbles.additions);
   $(".teslovsnote .section_title.changes span").text(scribbles.changes);
   $(".teslovsnote .section_title.deletions span").text(scribbles.deletions);
+
+  var kez = {
+    "size": $(".kezeiosnote .section_name").length
+  };
+
+  console.log(kez);
+  if (kez.size == 0) {
+    $(".kezeiosnote .section_title.count").remove();
+  }
+  $(".kezeiosnote .section_title.count span").text(kez.size);
 })
