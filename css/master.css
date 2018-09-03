@@ -360,37 +360,37 @@ a {
 .devblog_section .section_title {
   color: #738D45;
   font-size: 22px;
-    display: inline-block;
-    border-radius: 2px;
-    padding: 2px 7px;
-    margin: 7px auto 7px 5px;
-    background: #323232;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: #323232;
 }
 
 .devblog_section .section_name {
   color: #738D45;
   font-size: 22px;
   padding-bottom: 5px;
-    display: inline-block;
-    border-radius: 2px;
-    padding: 2px 7px;
-    margin: 7px auto 7px 5px;
-    background: darkgrey;
-    color: #323232;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: darkgrey;
+  color: #323232;
 }
 
 .devblog_section .section_role {
   color: #738D45;
   font-size: 22px;
   padding-bottom: 5px;
-    display: inline-block;
-    border-radius: 2px;
-    padding: 2px 7px;
-    margin: 7px auto 7px 5px;
-    background: darkgrey;
-    color: #323232;
-    opacity: 0;
-    transition: opacity 0.3s ease-out;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: darkgrey;
+  color: #323232;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
 }
 
 .devblog_section .section_text {
@@ -538,9 +538,14 @@ a {
   padding-top: 20px;
 }
 
-.teslovsnote .section_title{
-  display: block;
+.teslovsnote .section_title {
   font-size: 26px;
+  color: #738D45;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: #323232;
 }
 
 .teslovsnote .section_name {
@@ -596,21 +601,21 @@ a {
 
 .teslovsnote .userrole.model {
   background: purple;
-  color:white;
+  color: white;
 }
 
 .devblog_section .section_role.programmer {
-    background: lightblue;
+  background: lightblue;
 }
 
 .devblog_section .section_role.model {
-    background: purple;
-    color:white;
+  background: purple;
+  color: white;
 }
 
 .devblog_section .section_role.leadprogrammer {
-    background: #722F37;
-    color: white;
+  background: #722F37;
+  color: white;
 }
 
 .teslovsnote .section_text {
