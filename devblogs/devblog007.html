@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="..\favicon.png">
   <script src="../javascript/jquery.js" charset="utf-8"></script>
   <script src="../javascript/gallery.js" charset="utf-8"></script>
+  <script src="../javascript/teammember.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -52,27 +53,31 @@
       </div>
     </div>
     <div class="content-5 wrapper50">
+
       <section class="devblog_section">
-        <h2 class="section_title">Combat Systems</h2><br>
-        <h3 class="section_name">Teslov</h3><br>
-        <p class="section_text">Teslov made a combat system idea and put it to work.</p>
+        <h2 class="section_title">Combat Systems</h2>
+        <h3 class="section_name" onmouseout="removeMemberRole(this)" onmouseover="displayMemberRole(this)">Teslov</h3>
+        <h3 class="section_role leadprogrammer">Lead Programmer</h3><br>
+        <p class="section_text">Teslov has been hard at work for the last month on the boner's combat and movement AI and decided to showcase his progress by having 2 army of boners going against each other using flags attached to their pelvises.</p>
         <img src="https://cdn.discordapp.com/attachments/444614217979658260/457880516947869717/unknown.png" width="100%" alt="">
-        <video src="https://cdn.discordapp.com/attachments/440383869049503746/457866474329997313/aibetter.mp4" controls width="100%" poster="https://media.discordapp.net/attachments/457973965210779669/458295948142182400/unknown.png">
+        <video src="https://cdn.discordapp.com/attachments/440383869049503746/471318159601827850/boners_army.mp4" controls width="100%" poster="">
           The browser you're using does not support fun videos.
         </video>
-        <p class="section_text">Teslov has been hard at work for the last month on the boner's combat and movement AI and decided to showcase his progress by having 2 army of boners going against each other using flags attached to their pelvises.</p>
-        <video src="https://cdn.discordapp.com/attachments/440383869049503746/471318159601827850/boners_army.mp4" controls width="100%" poster="">
+        <p class="section_text">He also made the AI wander around so the cemetery so it seems more "alive".</p>
+        <video src="https://cdn.discordapp.com/attachments/440383869049503746/457866474329997313/aibetter.mp4" controls width="100%" poster="https://media.discordapp.net/attachments/457973965210779669/458295948142182400/unknown.png">
           The browser you're using does not support fun videos.
         </video>
       </section>
       <section class="devblog_section">
-        <h2 class="section_title">Masks and Creatures</h2><br>
-        <h3 class="section_name">Kevin</h3><br>
+        <h2 class="section_title">Masks and Creatures</h2>
+        <h3 class="section_name" onmouseout="removeMemberRole(this)" onmouseover="displayMemberRole(this)">Kevin</h3>
+        <h3 class="section_role model">3D Artist</h3><br>
         <p class="section_text">Late last month Kevin has made various masks based on the skill sets and play styles.</p>
         <div class="gallery">
           <div class="galleryrow">
             <div class="galleryitem sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/ea915b2f361547e5ae116934bab3c388/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-              <p class="gallerysubtitle">The Karasu-Tengu is an old Japanese myth. This kind of Tengu has been thought to have feathers, wings and a beak. In some paintings they look like monsters with sharp teeth and claws, like died out predatory dinosaur and in other paintings it looks like they are out of a comic. It is said that this monster has magical skills.</p>
+              <p class="gallerysubtitle">The Karasu-Tengu is an old Japanese myth. This kind of Tengu has been thought to have feathers, wings and a beak. In some paintings they look like monsters with sharp teeth and claws, like died out predatory dinosaur and in other paintings
+                it looks like they are out of a comic. It is said that this monster has magical skills.</p>
             </div>
             <div class="galleryitem sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/b82fbbf004454073b0696f85fac36b7c/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
               <p class="gallerysubtitle">The Hannya mask is said to display the complexity of human emotions. If an actor wearing the mask happened to look straight ahead, the mask appears frightening and angry; but when tilted slightly down, the face of the demon appears to be
@@ -80,17 +85,18 @@
             </div>
           </div>
           <div class="galleryrow">
-          <div class="galleryitem sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/51a418f321a7467f8d1b188a3ea1337a/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-            <p class="gallerysubtitle">Kitsune mask is a mask of a fox. It has meaning in religion and folk tradition. In Japanese culture, Fox has contradictory behavior. It can be benevolent (good) or malevolent (evil) depending on the situation.</p>
-          </div>
+            <div class="galleryitem sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/51a418f321a7467f8d1b188a3ea1337a/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              <p class="gallerysubtitle">Kitsune mask is a mask of a fox. It has meaning in religion and folk tradition. In Japanese culture, Fox has contradictory behavior. It can be benevolent (good) or malevolent (evil) depending on the situation.</p>
+            </div>
             <div class="galleryitem sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/a1e0911f6a574e02bb9f9a292f2f0e79/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-              <p class="gallerysubtitle">Tengu (天狗, “heavenly dog”) is a type of legendary creature from Japanese folk religion and are also considered a type of Shinto god (kami) or yōkai (supernatural beings). … Buddhism long held that the tengu were disruptive demons and harbingers of war.</p>
+              <p class="gallerysubtitle">Tengu (天狗, “heavenly dog”) is a type of legendary creature from Japanese folk religion and are also considered a type of Shinto god (kami) or yōkai (supernatural beings). … Buddhism long held that the tengu were disruptive demons and harbingers
+                of war.</p>
             </div>
           </div>
         </div>
       </section>
       <section class="devblog_section">
-        <h2 class="section_title">Another view of the cemetery</h2><br>
+        <h2 class="section_title">Another view of the cemetery</h2>
         <h3 class="section_name">Teslov</h3><br>
         <p class="section_text">Here we have another view of the cemetery area and a video of the boners.</p>
         <div class="gallery">
@@ -108,7 +114,7 @@
         </video>
       </section>
       <section class="devblog_section">
-        <h2 class="section_title">Graphics Overhall</h2><br>
+        <h2 class="section_title">Graphics Overhall</h2>
         <h3 class="section_name">Kevin</h3><br>
         <p class="section_text">Kevin has been making changes to the graphics engine of teslov's current build. Making it not only look better but also run better. Here is some screenshots after Overhaul.</p>
         <div class="gallery">
@@ -118,6 +124,49 @@
           </div>
         </div>
       </section>
+
+
+      <div class="teslovsnote">
+        <h3 class="section_title">Teslov's Secret Notes</h3><br>
+
+        <h2 class="section_name change">Weapon System 2.0</h2><br>
+        <p class="section_text">For long time weapons were nothing more than meshes attached to player models. If weapon needed some additional data ( like special abilities ) it was handled by another object that spawned on runtime. It was of course terrible and hard to manage.
+          I was probably drunk when I thought of it. Anyway, it got reworked and all the data about your weapon is stored in your weapon. This allows us to make unique items a lot more easily.</p>
+
+        <h2 class="section_name change">Building System</h2><br>
+        <p class="section_text">Building system is currently pretty simple. Grab a hammer, element template will show up. Press right click to change selected piece or press left click to build it. Every part cost 100 wood for now, it'll of course change in the future.<br><em>Fun Fact: Building was implemented before inventory API was a thing so it was impossible to manipulate it easily ( it is now, thankfully )</em></p>
+
+        <h2 class="section_name addition">Magic System</h2><br>
+        <p class="section_text">This one is my favourited. Magic is handled like weapons but exists only temporary as it's not stored in inventory. It is instead stored in array of available spells. This way you can learn spells or you can cast them with another item like scroll
+          or rune.<br>There's also spellbook widget where you can browse your spells.</p>
+
+        <h2 class="section_name addition">Consumables</h2><br>
+        <p class="section_text">Another thing added, items you can use from your inventory. It includes things like bread, water, potions or magical scrolls. System is very extendable and can be easily used to make any kind of item as every item can have it's own script.</p>
+
+        <h2 class="section_name addition">Containers</h2><br>
+        <p class="section_text">Inventory system got moved to external component and got it's own API. Now it's a lot easier to manipulate backpack so I've added containers.<br>Lootable things can now be plundered with special quick-loot interface a little bit based on certain
+          FPS game with RPG elements that took place in wastelands.</p>
+
+        <h2 class="section_name change">Animation Tweaks</h2><br>
+        <p class="section_text">Items now have <span style="color: green">Type</span> which dictates what animation does it use. All anims are now nicely blended and show on both first and third person</p>
+
+        <h2 class="section_name addition">Factions</h2><br>
+        <p class="section_text">Factions allow AI to understand who's an enemy and who's a friend. Faction include things like "undead" or "predator" and allow for things like making Wolves attack Deer. System is of course runtime-editable and includes players as they can also
+          join one of four major factions.</p>
+
+        <h2 class="section_name change">Harvestables Rework</h2><br>
+        <p class="section_text">For testing purposes, at the beginning of the project we used simple actors for gatherable resources. This way was pretty bad because it's both performance unfriendly and make map-making a very boring task. <br>I've rewrote the system to use foliage
+          with custom instanced mesh solution that allows for replication. <br>( Foliage is not able to be replicated in UE4 by default )</p>
+
+        <h2 class="section_name addition">Hunger/Thirst</h2>
+        <h2 onmouseout="removeMemberRole(this)" onmouseover="displayMemberRole(this)" class="username">KeZeio</h2>
+        <h2 class="userrole programmer">Programmer</h2><br>
+        <p class="section_text">KeZeio added Hunger and Thirst system to the game, they don't impact gameplay too much yet.</p>
+
+        <h2 class="section_name addition">Small stuff</h2><br>
+        <p class="section_text">Alongside big stuff I've put above there also were lots of fixes, new meshes, optimization, new items. I've started working on NPCs, quests and dialogues, made working prototype of randomly generated dungeons, meshes for humans with better IK
+          to speed up animation process. There were also some work on mounts. We're all very busy here with lots and lots of new juicy content coming.</p>
+      </div>
     </div>
   </div>
   <div class="footer">
