@@ -1,0 +1,14 @@
+{
+  "news": [{
+    "changes": {
+      "title": "Version 0.0.1 of Mushroom Launcher",
+      "subtitle": "Alpha 1 is gonna be goooood",
+      "description": "Nuttin special"
+    },
+    "devblog": {
+      "title": "Devblog 007",
+      "subtitle": "Latest late devblog",
+      "description": "Combat Systems - Masks and Armor - Teslov's Drunken Scribbles - KeZeio's Featured Ass - Extras"
+    }
+  }]
+}
