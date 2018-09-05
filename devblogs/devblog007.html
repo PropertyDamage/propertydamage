@@ -8,6 +8,9 @@
   <link rel="shortcut icon" href="..\favicon.png">
   <script src="../javascript/jquery.js" charset="utf-8"></script>
   <script src="../javascript/gallery.js" charset="utf-8"></script>
+  <script src="../javascript/teammember.js" charset="utf-8"></script>
+  <script src="../javascript/countnotes.js" charset="utf-8"></script>
+  <!-- <script src="../javascript/section.js" charset="utf-8"></script> -->
 </head>
 
 <body>
@@ -28,6 +31,7 @@
           <a href="../devblog.html">Blog</a>
           <a href="../aboutus.html">About</a>
           <a href="../team.html">Team</a>
+          <a href="../roadmap.html">Roadmap</a>
         </div>
       </div>
     </div>
@@ -44,6 +48,8 @@
           <tr>
             <td>
               <h1>Devblog 7</h1>
+              <p>Latest late update</p>
+              <p>2 September</p>
             </td>
           </tr>
         </table>
@@ -51,27 +57,28 @@
     </div>
     <div class="content-5 wrapper50">
       <section class="devblog_section">
-        <h2 class="section_title">Combat Systems</h2><br>
-        <h3 class="section_name">Teslov</h3><br>
-        <p class="section_text">Teslov made a combat system idea and put it to work.</p>
+        <h2 class="section_title">New Discord</h2>
+        <p class="section_text">We had some ownership issues in the old mycelium discord so we now have a new one. Join us on the new Mycelium discord server.</p>
+        <h1 style="display:block; text-align:center;"><a href="https://discord.gg/baKDTrS" style="padding: 5px 15px;background:#FFFFFF; border-radius: 5px;display:inline-block; border: 15px; color: #7289DA">Join Mycelium Official Discord</a></h1>
+      </section>
+      <section class="devblog_section">
+        <h2 class="section_title">Combat Systems</h2>
+        <h3 class="section_name" onmouseout="removeMemberRole(this)" onmouseover="displayMemberRole(this)">Teslov</h3>
+        <h3 class="section_role leadprogrammer">Lead Programmer</h3><br>
+        <p class="section_text">Teslov has been hard at work for the last month on the boner's combat and movement AI. Here is the original idea for the combat system.</p>
         <img src="https://cdn.discordapp.com/attachments/444614217979658260/457880516947869717/unknown.png" width="100%" alt="">
-        <video src="https://cdn.discordapp.com/attachments/440383869049503746/457866474329997313/aibetter.mp4" controls width="100%" poster="https://media.discordapp.net/attachments/457973965210779669/458295948142182400/unknown.png">
+        <p class="section_text">After the system got put into words Teslov made a basic combat system that included most of the aspects mentioned. </p>
+        <video src="https://cdn.discordapp.com/attachments/485946795084742678/486304295961231371/hacked-and-slashed.mp4" controls width="100%" poster="">
           The browser you're using does not support fun videos.
         </video>
-      </section>
-      <section class="devblog_section">
-        <h2 class="section_title">Masks and Creatures</h2><br>
-        <h3 class="section_name">Kevin</h3><br>
-        <p class="section_text">Kevin made some creatures in the past month and also gave a try to making masks.</p>
-        <div style="display: table; width: 100%">
-          <div style="display: table-cell" class="sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/51a418f321a7467f8d1b188a3ea1337a/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
-          <div style="display: table-cell" class="sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/b82fbbf004454073b0696f85fac36b7c/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
-        </div>
-      </section>
-      <section class="devblog_section">
-        <h2 class="section_title">Another view of the cemetery</h2><br>
-        <h3 class="section_name">Teslov</h3><br>
-        <p class="section_text">Here we have another view of the cemetery area and a video of the boners.</p>
+        <p class="section_text">The combat system got later deppened and Teslov proceeded to test a mass war of 2 armies of boners going against eachother, the flags attached to their pelvises represent what team they are in.</p>
+        <video src="https://cdn.discordapp.com/attachments/440383869049503746/471318159601827850/boners_army.mp4" controls width="100%" poster="">
+          The browser you're using does not support fun videos.
+        </video>
+        <p class="section_text">He also made the AI wander around the cemetery to show the more smooth revised AI path finding.</p>
+        <video src="https://cdn.discordapp.com/attachments/457973965210779669/458254842541113356/bonerlife2.mp4" controls width="100%">
+          Where is the video? Your browser doesn't know.
+        </video>
         <div class="gallery">
           <div class="galleryrow">
             <div class="galleryitem" onclick="open_gallery(this)"><img width="100%" src="https://cdn.discordapp.com/attachments/457973965210779669/458251423348424704/unknown.png" alt=""></div>
@@ -82,10 +89,137 @@
             <div class="galleryitem" onclick="open_gallery(this)"><img width="100%" src="https://cdn.discordapp.com/attachments/457973965210779669/458251125452308491/unknown.png" alt=""></div>
           </div>
         </div>
-        <video src="https://cdn.discordapp.com/attachments/457973965210779669/458254842541113356/bonerlife2.mp4" controls width="100%">
-
-        </video>
       </section>
+      <section class="devblog_section">
+        <h2 class="section_title">Masks and Coins</h2>
+        <h3 class="section_name" onmouseout="removeMemberRole(this)" onmouseover="displayMemberRole(this)">Kevin</h3>
+        <h3 class="section_role model">3D Artist</h3><br>
+        <p class="section_text">Late last month Kevin has made various masks based on the skill sets and play styles.</p>
+        <div class="gallery">
+          <div class="galleryrow">
+            <div class="galleryitem sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/ea915b2f361547e5ae116934bab3c388/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              <p class="gallerysubtitle">The Karasu-Tengu is an old Japanese myth. This kind of Tengu has been thought to have feathers, wings and a beak. In some paintings they look like monsters with sharp teeth and claws, like died out predatory dinosaur and in other paintings
+                it looks like they are out of a comic. It is said that this monster has magical skills.</p>
+            </div>
+            <div class="galleryitem sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/b82fbbf004454073b0696f85fac36b7c/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              <p class="gallerysubtitle">The Hannya mask is said to display the complexity of human emotions. If an actor wearing the mask happened to look straight ahead, the mask appears frightening and angry; but when tilted slightly down, the face of the demon appears to be
+                sorrowful. The oldest hannya mask is dated 1558.</p>
+            </div>
+          </div>
+          <div class="galleryrow">
+            <div class="galleryitem sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/51a418f321a7467f8d1b188a3ea1337a/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              <p class="gallerysubtitle">Kitsune mask is a mask of a fox. It has meaning in religion and folk tradition. In Japanese culture, Fox has contradictory behavior. It can be benevolent (good) or malevolent (evil) depending on the situation.</p>
+            </div>
+            <div class="galleryitem sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/a1e0911f6a574e02bb9f9a292f2f0e79/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              <p class="gallerysubtitle">Tengu (天狗, “heavenly dog”) is a type of legendary creature from Japanese folk religion and are also considered a type of Shinto god (kami) or yōkai (supernatural beings). … Buddhism long held that the tengu were disruptive demons and harbingers
+                of war.</p>
+            </div>
+          </div>
+          <div class="galleryrow">
+            <div class="galleryitem sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/d75323b8c16b43b99d0780056a038aeb/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              <p class="gallerysubtitle">Heavily Inspired by The Song Generals From China. The pauldrons (armor plates) aren't finished</p>
+            </div>
+            <div class="galleryitem sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/7abe17ef1e6d4d81bf346f8461f1a94d/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+              <p class="gallerysubtitle">Just a Random Coin. Based Off of the Chinese Coins.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="devblog_section">
+        <h2 class="section_title"><em><strong>E X T R A S</strong></em></h2>
+        <h3 class="section_name" onmouseout="removeMemberRole(this)" onmouseover="displayMemberRole(this)">Mycelium Team</h3>
+        <h3 class="section_role">Everyone</h3><br>
+        <p class="section_text">Here's some screenies of what everyone has been doing or just some extra stuff left around on the disord. Nothing too section worthy.</p>
+        <div class="gallery">
+          <div class="galleryrow">
+            <div class="galleryitem" onclick="open_gallery(this)"><img width="100%" src="https://cdn.discordapp.com/attachments/484652870281461761/485576027351941151/unknown.png" alt="">
+              <p class="gallerysubtitle">Teslov has been testing around the character customization. Here we see 3 big bois with different skin colours.</p>
+            </div>
+            <div class="galleryitem" onclick="open_gallery(this)"><video loop autoplay width="100%" src="https://cdn.discordapp.com/attachments/484652870281461761/485149062849626137/foryou.mp4" alt=""></video>
+              <p class="gallerysubtitle">Bench.<br>Mount.<br><em>(click it it's a video)</em></p>
+            </div>
+          </div>
+          <div class="galleryrow">
+            <div class="galleryitem" onclick="open_gallery(this)"><img width="100%" src="https://cdn.discordapp.com/attachments/484652870281461761/485532360087961600/unknown.png" alt="">
+              <p class="gallerysubtitle">Legendary Barrel Armour. Tes created the impossible.</p>
+            </div>
+            <div class="galleryitem" onclick="open_gallery(this)"><img width="100%" src="https://cdn.discordapp.com/attachments/484652870281461761/486027804660465664/unknown.png" alt="">
+              <p class="gallerysubtitle">Contrary to what it looks like on the screenshot, there is gonna be candles on the lamps. Brian made this lamp along with wall lamps of the same style.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="teslovsnote">
+        <h3 class="section_title">Teslov's Drunk Scribbles</h3>
+        <h3 class="section_title additions"><span>0</span> Additions</h3>
+        <h3 class="section_title changes"><span>0</span> Changes</h3>
+        <h3 class="section_title deletions"><span>0</span> Deletions</h3><br>
+        <p class="section_text">We've found Teslov's drunken diary with special notes on the game.</p>
+
+        <h2 class="section_name change">Weapon System 2.0</h2><br>
+        <p class="section_text">For long time weapons were nothing more than meshes attached to player models. If weapon needed some additional data ( like special abilities ) it was handled by another object that spawned on runtime. It was of course terrible and hard to manage.
+          I was probably drunk when I thought of it. Anyway, it got reworked and all the data about your weapon is stored in your weapon. This allows us to make unique items a lot more easily.</p>
+
+        <h2 class="section_name change">Building System</h2><br>
+        <p class="section_text">Building system is currently pretty simple. Grab a hammer, element template will show up. Press right click to change selected piece or press left click to build it. Every part cost 100 wood for now, it'll of course change in the future.<br><em>Fun Fact: Building was implemented before inventory API was a thing so it was impossible to manipulate it easily ( it is now, thankfully )</em></p>
+
+        <h2 class="section_name addition">Magic System</h2><br>
+        <p class="section_text">This one is my favourited. Magic is handled like weapons but exists only temporary as it's not stored in inventory. It is instead stored in array of available spells. This way you can learn spells or you can cast them with another item like scroll
+          or rune.<br>There's also spellbook widget where you can browse your spells.</p>
+
+        <h2 class="section_name addition">Consumables</h2><br>
+        <p class="section_text">Another thing added, items you can use from your inventory. It includes things like bread, water, potions or magical scrolls. System is very extendable and can be easily used to make any kind of item as every item can have it's own script.</p>
+
+        <h2 class="section_name addition">Containers</h2><br>
+        <p class="section_text">Inventory system got moved to external component and got it's own API. Now it's a lot easier to manipulate backpack so I've added containers.<br>Lootable things can now be plundered with special quick-loot interface a little bit based on certain
+          FPS game with RPG elements that took place in wastelands.</p>
+
+        <h2 class="section_name change">Animation Tweaks</h2><br>
+        <p class="section_text">Items now have <span style="color: green">Type</span> which dictates what animation does it use. All anims are now nicely blended and show on both first and third person</p>
+
+        <h2 class="section_name addition">Factions</h2><br>
+        <p class="section_text">Factions allow AI to understand who's an enemy and who's a friend. Faction include things like "undead" or "predator" and allow for things like making Wolves attack Deer. System is of course runtime-editable and includes players as they can also
+          join one of four major factions.</p>
+
+        <h2 class="section_name change">Harvestables Rework</h2><br>
+        <p class="section_text">For testing purposes, at the beginning of the project we used simple actors for gatherable resources. This way was pretty bad because it's both performance unfriendly and make map-making a very boring task. <br>I've rewrote the system to use foliage
+          with custom instanced mesh solution that allows for replication. <br>( Foliage is not able to be replicated in UE4 by default )</p>
+
+        <h2 class="section_name addition">Small stuff</h2><br>
+        <p class="section_text">Alongside big stuff I've put above there also were lots of fixes, new meshes, optimization, new items. I've started working on NPCs, quests and dialogues, made working prototype of randomly generated dungeons, meshes for humans with better IK
+          to speed up animation process. There were also some work on mounts. We're all very busy here with lots and lots of new juicy content coming.</p>
+      </div>
+      <div class="kezeiosnote">
+        <h3 class="section_title">KeZeio's Featured Ass</h3>
+        <h3 class="section_title count"><span>0</span></h3><br>
+        <h2 class="section_name">Hunger/Thirst</h2>
+        <p class="section_text">KeZeio added Hunger and Thirst system to the game. When hunger and thirst are low, the player loses HP, otherwise if hunger and thirst are fulfilled the player regenerates health. This feature is fully implemented and easy to modify in the future.</p>
+        <div style="width: 50%; text-align:center; margin: auto; display: block; border-radius: 5px" class="gallery">
+          <div class="galleryrow">
+            <div class="galleryitem" onclick="open_gallery(this)"><img width="100%" src="https://cdn.discordapp.com/attachments/485946795084742678/486295120057204737/5bfc800d28354d5b5e8c7c7447cd7b18.png" alt="">
+              <p class="gallerysubtitle">Here's the hunger and thirst bars, assests will most likely be replaced.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <h2 class="section_name">World Design</h2>
+        <p class="section_text">KeZeio has been working on the new Continent of Edrix, a lot of stuff can't really be shown as it's unfinished and doesn't look up to his standards.</p>
+        <div class="gallery">
+          <div class="galleryrow">
+            <div class="galleryitem" onclick="open_gallery(this)"><img width="100%" src="https://cdn.discordapp.com/attachments/478253083995144213/478357289401843722/506facdc6fb03725e2e869a3d232e7ea.jpg" alt="">
+              <p class="gallerysubtitle">KeZeio and Teslov made a riverside area, with a bridge and some trees (fortunately foliage now replicates on server)</p>
+            </div>
+            <div class="galleryitem" onclick="open_gallery(this)"><img width="100%" src="https://cdn.discordapp.com/attachments/444300415400673280/486007575158980608/f230ea84802cfce8aa31e7529f77333a.jpg" alt="">
+              <p class="gallerysubtitle">Here is a cemetary in the actual map of our great continent of Edrix that KeZeio has started work on. The white blocks are to signify buildings that aren't currently in the game yet.</p>
+            </div>
+          </div>
+        </div>
+        <h2 class="section_name">Day/Night Cycle</h2>
+        <p class="section_text">Added Day and Night cycle, days last 30 min.</p>
+
+      </div>
     </div>
   </div>
   <div class="footer">
@@ -96,7 +230,7 @@
       <div class="rightside">
         <ul>
           <li>
-            <a href="https://discord.gg/j9YcU7v">discord</a>
+            <a href="https://discord.gg/3Xr282W">discord</a>
           </li>
           <li>
             <a href="https://twitter.com/RegimentRuin">twitter</a>
