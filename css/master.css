@@ -535,7 +535,10 @@ a {
 }
 
 .teslovsnote {
-  padding-top: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #3C091950;
 }
 
 .teslovsnote .section_title {
@@ -546,6 +549,21 @@ a {
   padding: 2px 7px;
   margin: 7px auto 7px 5px;
   background: #323232;
+}
+
+.teslovsnote .section_title.additions{
+  background: green;
+  color: #323232;
+}
+
+.teslovsnote .section_title.changes{
+  background: orange;
+  color: #323232;
+}
+
+.teslovsnote .section_title.deletions{
+  background: red;
+  color: #323232;
 }
 
 .teslovsnote .section_name {
@@ -620,6 +638,40 @@ a {
 
 .teslovsnote .section_text {
   text-align: justify;
+  padding: 0 0 7px 0;
+}
+
+.kezeiosnote{
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #7851a990;
+}
+
+.kezeiosnote .section_title {
+  font-size: 26px;
+  color: #738D45;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: #323232;
+}
+
+.kezeiosnote .section_name {
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 18px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: #7851a990;
+  transform: scale(1);
+  transition: padding 0.6s ease-in-out, transform 0.6s ease-in-out, filter 0.6s ease-in-out;
+}
+
+.kezeiosnote .section_text {
+  text-align: justify;
+  padding: 0 0 7px 0;
 }
 
 .footer {
