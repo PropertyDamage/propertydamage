@@ -1,5 +1,423 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,900");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Roboto:400,900");
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto";
+  background: #763434;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #ffffff;
+}
+
+a{
+  text-decoration: none;
+  color: #c2c2c2;
+}
+
+a:hover{
+  color: #ffffff;
+}
+
+div {
+  display: block;
+}
+
+#content {
+  display: block;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    max-width: 736px;
+    width: 736px;
+  }
+
+  .section {
+    max-width: 800px;
+    width: 800px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 836px;
+    width: 836px;
+  }
+
+  .section {
+    max-width: 900px;
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    max-width: 936px;
+    width: 936px;
+  }
+
+  .section {
+    max-width: 1000px;
+    width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1136px;
+    width: 1136px;
+  }
+
+  .section {
+    max-width: 1200px;
+    width: 1200px;
+  }
+}
+
+.hellfire {
+  position: relative;
+}
+
+.withvideo {
+  position: relative;
+}
+
+.withback {
+  position: relative;
+}
+
+.fullheight {
+  min-height: 100vh;
+}
+
+.itemize50 {
+  padding: 50px 0;
+}
+
+.flexiblerows {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.barrier{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(transparent,#763434);
+  z-index: 100;
+}
+
+.title {
+  font-family: "EB Garamond";
+}
+
+.title>h1 {
+  text-align: center;
+  font-size: 76px;
+  text-shadow: #222222 -2px 4px 0px, #323232 -7px 7px 0px;
+}
+
+.title p {
+  text-align: center;
+  font-size: 54px;
+}
+
+.title .flexiblerows h1>a {
+  display: inline-block;
+  margin: auto;
+  padding: 10px 20px;
+  background: #ffffff55;
+  color: #222222;
+  text-decoration: none;
+  transition: background 0.1s ease-out, color 0.1s ease-out;
+}
+
+.title .flexiblerows h1 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: center;
+  text-align: center;
+  margin: 30px;
+  font-size: 36px;
+}
+
+.title .flexiblerows h1>a:hover {
+  display: inline-block;
+  margin: auto;
+  background: #323232;
+  color: #ffffff55;
+  transition: background 0.3s ease-out, color 0.3s ease-out;
+}
+
+.hellfire {
+  position: relative;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hellfire.withvideo .fillvideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.hellfire.withvideo .fillvideo.blurry {
+  filter: blur(5px);
+}
+
+.hellfire.withvideo .fillvideo.down {
+  filter: grayscale(1) brightness(0.2);
+}
+
+.hellfire.withvideo .fillvideo>video {
+  object-fit: cover;
+  height: 100%;
+  min-width: 100%;
+}
+
+#content.withback>.fillimg, .hellfire.withback .fillimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -3;
+}
+
+#content.withback>.fillimg.blurry, .hellfire.withback .fillimg.blurry {
+  filter: blur(5px);
+}
+
+#content.withback>.fillimg.dark, .hellfire.withback .fillimg.dark {
+  filter: brightness(0.2);
+}
+
+#content.withback>.fillimg>img, .hellfire.withback .fillimg>img {
+  object-fit: cover;
+  height: 100%;
+  min-width: 100%;
+}
+
+#content.withback>.fillimg>img{
+  height: 100vh;
+}
+
+#content.withback>.fillimg>.barrier{
+  height: 100vh;
+}
+
+.hellfire.pagetitle .hellfire-body, .hellfire.fullheight .hellfire-body {
+  align-items: center;
+  display: flex;
+}
+
+.hellfire.pagetitle .hellfire-body .container, .hellfire.fullheight .hellfire-body>.container {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.hellfire-body {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.pagetitle {
+  text-align: center;
+}
+
+.pagetitle h1{
+  padding: 15px;
+}
+
+.pagetitle p:first-of-type{
+  font-size: 20px;
+}
+.pagetitle p:last-of-type{
+  font-size: 16px;
+}
+
+.pagetitle .underlined{
+  padding-bottom: 10px;
+  display: inline-block;
+  border-bottom: 1px solid white;
+}
+
+.projects{
+  padding: 10px;
+  background: #738D45;
+}
+
+.projects>h1{
+  color: #ffffff;
+}
+
+.collums {
+  display: flex;
+}
+
+.collums.multirow {
+  flex-wrap: wrap;
+}
+
+.collum {
+  display: block;
+  padding: 12px;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.collum.one-third {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 30%;
+}
+
+.collum.bordered {
+  border: white solid 2px;
+  margin: -2px;
+}
+
+.card {
+  max-width: 100%;
+  color: darkgrey;
+  position: relative;
+  background: white;
+}
+
+.card .card-img {
+  display: block;
+  position: relative;
+}
+
+.card .card-img .fillimg {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  filter: opacity(0.7);
+  height: inherit;
+  transition: filter 0.3s ease-out, height 0.3s ease-out;
+}
+
+.card .card-content {
+  padding: 15px;
+}
+
+.card .card-content h1 {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  color: white;
+}
+
+.card .card-content p {
+  display: block;
+  font-size: 18px;
+  color: white;
+}
+
+.card.trnspcard {
+  background: transparent;
+  transition: background 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.card.trnspcard:hover {
+  background: #ffffff55;
+  transform: scale(1.02);
+}
+
+.card:hover .card-img .fillimg {
+  filter: opacity(1);
+  height: 30%;
+}
+
+.card .card-img.withtext .backtext {
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  padding: 10px;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.card .card-img.withtext .backtext h1 {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  color: white;
+  font-size: 18px;
+}
+
+.card .card-img.withtext .backtext p {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: block;
+  font-size: 16px;
+  color: white;
+  text-align: justify;
+}
+
+.card .card-img.withtext .backtext a {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  font-size: 16px;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background: #ffffff55;
+  text-decoration: none;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card .card-img.withtext .backtext a:hover {
+  background: #ffffff99;
+  color: #323232;
+}
+
+.card:hover .card-img.withtext .backtext {
+  opacity: 1;
+  transition: opacity 0.3s ease-out 0.3s;
+}
+
+.templates {
+  visibility: hidden;
 }

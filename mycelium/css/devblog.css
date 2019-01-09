@@ -1,0 +1,132 @@
+body {
+  background: #222222;
+  color: #cbcbcb;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.devblog {
+  line-height: 1.5;
+  padding: 5px;
+  border-left: #738D45 solid 3px;
+  /* border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+  margin: 0;
+  filter: hue-rotate(0deg);
+}
+
+.devblog p {
+  padding: 10px 15px;
+  text-align: justify;
+}
+
+.devblog:hover {
+  background: #343434;
+  filter: hue-rotate(180deg);
+}
+
+.devblog.late {
+  padding: 5px;
+  border-left: #EA9010 dashed 3px;
+  margin: 0;
+}
+
+.devblog.masterpiece {
+  padding: 5px;
+  border-left: #009FFD inset 3px;
+  margin: 0;
+}
+
+.devblog a {
+  display: inline-block;
+}
+
+.devblog a h3.Title {
+  color: #738D45;
+  display: inline-block;
+  padding: 5px;
+}
+
+.devblog a:hover h3 {
+  color: #ffffff;
+}
+
+.devblog .Date {
+  color: #738D45;
+  display: inline-block;
+}
+
+.devblog .Aftertitle {
+  color: #738D45;
+  display: inline-block;
+}
+
+.devblog_section {
+  padding: 5px 0;
+}
+
+.devblog_section .section_title {
+  color: #738D45;
+  font-size: 22px;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: #323232;
+}
+
+.devblog_section .section_name {
+  color: #738D45;
+  font-size: 22px;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: darkgrey;
+  color: #323232;
+}
+
+.devblog_section .section_role {
+  color: #738D45;
+  font-size: 22px;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 7px;
+  margin: 7px auto 7px 5px;
+  background: darkgrey;
+  color: #323232;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.devblog_section .section_role.programmer {
+  background: lightblue;
+}
+
+.devblog_section .section_role.model {
+  background: purple;
+  color: white;
+}
+
+.devblog_section .section_role.leadprogrammer {
+  background: #722F37;
+  color: white;
+}
+
+
+.devblog_section .section_text {
+  padding: 10px 15px;
+  color: #948c87;
+  text-align: justify;
+  padding: 20px;
+}
+
+.devblog_section .sketchfab-embed-wrapper {
+  display: inline;
+}
+
+.devblog_section .sketchfab-embed-wrapper p {
+  display: inline-block;
+}
