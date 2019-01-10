@@ -115,7 +115,6 @@ body {
   color: white;
 }
 
-
 .devblog_section .section_text {
   padding: 10px 15px;
   color: #948c87;
@@ -129,4 +128,35 @@ body {
 
 .devblog_section .sketchfab-embed-wrapper p {
   display: inline-block;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.gallerycollumn {
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.gallerycollumn:nth-child(even) {
+  border-radius: 0 10px 10px 0;
+}
+
+.gallerycollumn:nth-child(odd) {
+  border-radius: 10px 0 0 10px;
+}
+
+.galleryitem {
+  background: #32323250;
+  margin-bottom: 5px;
+}
+
+.galleryitem .gallerysubtitle {
+  padding: 10px;
 }
