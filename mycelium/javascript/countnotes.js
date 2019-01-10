@@ -30,4 +30,4 @@ $(document).ready(function() {
     $(".kezeiosnote .section_title.count").remove();
   }
   $(".kezeiosnote .section_title.count span").text(kez.size);
-})
+});

@@ -1,5 +1,3 @@
-var g_gallery;
-
 function open_gallery(trigger_element) {
   var gallery_element = $(trigger_element).children().clone();
   var gallery = $(".templates .popgallery").clone();

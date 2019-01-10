@@ -1,6 +1,6 @@
 <?php
-if (isset($_GET["devblog"])){
-  $title = $_GET["devblog"];
+if (isset($_GET["devblog"])) {
+    $title = $_GET["devblog"];
 }
 ?>
 <!DOCTYPE html>
@@ -18,18 +18,35 @@ if (isset($_GET["devblog"])){
     <script src="../javascript/devblogpost.js" charset="utf-8"></script>
   </head>
   <body>
+    <div id="overlay">
+    </div>
+
     <?php
     include '../header.php';
     if (isset($_GET["devblog"])) {
-      $link = "devblog" . $_GET["devblog"] . ".html";
-      if (file_exists($link)) {
-    include ($link);
-  }else {
-    include './notfound.html';
-  }
-    }else {
-      include './blog.html';
+        $link = "devblog" . $_GET["devblog"] . ".html";
+        if (file_exists($link)) {
+            include($link);
+        } else {
+            include './notfound.html';
+        }
+    } else {
+        include './blog.html';
     }
+    ?>
+
+    <div class="templates" hidden="hidden">
+      <div class="popgallery">
+        <div class="back" onclick="close_gallery(this)">
+          <a>x</a>
+        </div>
+        <div class="element">
+
+        </div>
+      </div>
+    </div>
+
+    <?php
     include '../../footer.php';
     ?>
   </body>

@@ -420,4 +420,5 @@ div {
 
 .templates {
   visibility: hidden;
+  position: absolute;
 }
