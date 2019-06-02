@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title:            Property Damage
-email:            ruinrevivalregiment@gmail.com
+email:            support@propertydmg.co.uk
 description:      >- # this means to ignore newlines until "baseurl:"
-  We make games you actually play (fuck you Garry).
+  We make games you actually play.
 baseurl:          "" # the subpath of your site, e.g. /blog
 url:              "https://www.propertydmg.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PropertyDmg
