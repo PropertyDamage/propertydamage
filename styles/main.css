@@ -139,7 +139,7 @@ a {
 @media (min-width: 1000px) {
   .meettheteam {
     flex-flow: row nowrap;
-    height: auto;
+    height: 100vh;
   }
   .meettheteam .member_button {
     text-align: center;
