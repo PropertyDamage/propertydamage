@@ -179,19 +179,19 @@ a {
 }
 .meettheteam .left .dv:hover,
 .meettheteam .right .dv:hover {
-  background: #ee4266;
+  background: linear-gradient(#ee4266, #cd2145);
 }
 .meettheteam .left .dg:hover,
 .meettheteam .right .dg:hover {
-  background: #6096ba;
+  background: linear-gradient(#6096ba, #39739a);
 }
 .meettheteam .left .cm:hover,
 .meettheteam .right .cm:hover {
-  background: #065a82;
+  background: linear-gradient(#065a82, #053c57);
 }
 .meettheteam .left .hm:hover,
 .meettheteam .right .hm:hover {
-  background: #456990;
+  background: linear-gradient(#456990, #234871);
 }
 .meettheteam .left .member_button,
 .meettheteam .right .member_button {
@@ -199,6 +199,8 @@ a {
   transition: background 0.1s ease-out;
   background: #323232;
   padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
 }
 .meettheteam .left .member_button:hover,
 .meettheteam .right .member_button:hover {
