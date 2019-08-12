@@ -109,16 +109,64 @@ a {
   transform: translateY(-8px);
 }
 
+@media (max-width: 1000px) {
+  .meettheteam {
+    flex-flow: column wrap;
+    height: auto;
+  }
+  .meettheteam .member_button {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .middle {
+    flex: 1 1 600px;
+  }
+
+  .left {
+    order: 1;
+  }
+
+  .right {
+    order: 2;
+  }
+
+  .middle {
+    order: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .meettheteam {
+    flex-flow: row nowrap;
+    height: auto;
+  }
+  .meettheteam .member_button {
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+  }
+
+  .middle {
+    flex: 2 1 600px;
+  }
+
+  .right .member_button {
+    text-align: left;
+  }
+
+  .left .member_button {
+    text-align: right;
+  }
+}
 .meettheteam {
   display: flex;
-  flex-direction: row;
   align-items: stretch;
   align-content: stretch;
   position: relative;
   overflow: hidden;
 }
 .meettheteam .middle {
-  flex: 1 1 600px;
   display: flex;
   align-items: stretch;
   flex-direction: column;
@@ -164,12 +212,6 @@ a {
   font-size: 32px;
   display: block;
 }
-.meettheteam .right .member_button {
-  text-align: left;
-}
-.meettheteam .left .member_button {
-  text-align: right;
-}
 .meettheteam .left,
 .meettheteam .right {
   flex: 1 1 300px;
@@ -198,8 +240,6 @@ a {
   flex-grow: 1;
   transition: background 0.1s ease-out;
   background: #323232;
-  padding: 10px;
-  margin: 15px;
   border-radius: 10px;
 }
 .meettheteam .left .member_button:hover,
