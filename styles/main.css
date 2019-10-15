@@ -104,6 +104,19 @@ a {
   font-size: 16px;
   padding: 8px;
 }
+.home > div .gamelist a p.archived {
+  font-size: 12px;
+  padding: 8px;
+  text-align: right;
+  float: right;
+  background: linear-gradient(to right, #f00000, #de0000);
+  border-radius: 8px;
+  color: #323232;
+}
+.home > div .gamelist a p.main {
+  font-size: 16px;
+  padding: 8px;
+}
 .home > div .gamelist a:hover {
   background: #2a324b;
   transform: translateY(-8px);

@@ -6,8 +6,8 @@ var members = [{
   },
   {
     "name": "Kevin",
-    "role": "3D Modeler",
-    "description": "He does 3D modeling and has previously made music for the game."
+    "role": "3D Modeler and Loremaster",
+    "description": "Wrote the lore for Mycelium and checks if 3D models and Buildings stick to the lore. He does 3D modeling and has previously made music for the game."
   },
   {
     "name": "HarryWood",
@@ -16,8 +16,8 @@ var members = [{
   },
   {
     "name": "KeZeio",
-    "role": "Programmer",
-    "description": "Sometimes he fiddles with Teslov's code and finds bugs."
+    "role": "Content Creative",
+    "description": "He likes to create new content for Mycelium. Sometimes he fiddles with Teslov's code and finds bugs."
   },
   {
     "name": "Linnet",
