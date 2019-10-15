@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #1b263b;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.fullscreen-flex-center {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.fullscreen-flex-center .bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fullscreen-flex-strech {
+  display: flex;
+  align-items: strech;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.fullscreen-flex-strech .bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.button {
+  color: white;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.home {
+  background: linear-gradient(217deg, #93032e, #93032e00), linear-gradient(127deg, #bb2552, #bb255200), linear-gradient(336deg, #86213f, #86213f00);
+  z-index: 1;
+}
+.home > div {
+  color: white;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+.home > div > h1 {
+  font-family: "Open Sans";
+  font-weight: 400;
+  padding: 15px;
+  font-size: 68px;
+  transition: font-size 1s ease-out;
+}
+.home > div > p {
+  font-size: 32px;
+  padding: 20px;
+  transition: font-size 1s ease-out;
+}
+.home > div .gamelist {
+  color: white;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+}
+.home > div .gamelist a {
+  flex-grow: 1;
+  flex-shrink: 1;
+  background: #1b263b;
+  padding: 16px;
+  margin: 8px;
+  transition: transform 0.3s ease-out, background 0.3s ease-out;
+}
+.home > div .gamelist a > h1 {
+  font-family: "Open Sans";
+  font-weight: 800;
+  padding: 8px;
+  font-size: 32px;
+}
+.home > div .gamelist a > p {
+  font-size: 16px;
+  padding: 8px;
+}
+.home > div .gamelist a p.archived {
+  font-size: 12px;
+  padding: 8px;
+  text-align: right;
+  float: right;
+  background: linear-gradient(to right, #f00000, #de0000);
+  border-radius: 8px;
+  color: #323232;
+}
+.home > div .gamelist a p.main {
+  font-size: 16px;
+  padding: 8px;
+}
+.home > div .gamelist a:hover {
+  background: #2a324b;
+  transform: translateY(-8px);
+}
+
+@media (max-width: 1000px) {
+  .meettheteam {
+    flex-flow: column wrap;
+    height: auto;
+  }
+  .meettheteam .member_button {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .middle {
+    flex: 1 1 600px;
+  }
+
+  .left {
+    order: 1;
+  }
+
+  .right {
+    order: 2;
+  }
+
+  .middle {
+    order: 0;
+  }
+}
+@media (min-width: 1000px) {
+  .meettheteam {
+    flex-flow: row nowrap;
+    height: 100vh;
+  }
+  .meettheteam .member_button {
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+  }
+
+  .middle {
+    flex: 2 1 600px;
+  }
+
+  .right .member_button {
+    text-align: left;
+  }
+
+  .left .member_button {
+    text-align: right;
+  }
+}
+.meettheteam {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  position: relative;
+  overflow: hidden;
+}
+.meettheteam .middle {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  margin: auto;
+}
+.meettheteam .middle .member_image {
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+  padding: 10px;
+}
+.meettheteam .middle .member_image .gradient_overlay {
+  background: linear-gradient(to top, #1b263b 25%, #1b263b00);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.meettheteam .middle .member_image img {
+  flex-grow: 1;
+  width: 200px;
+  margin: auto;
+}
+.meettheteam .middle .member_details {
+  flex-grow: 1;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+.meettheteam .middle .member_details .member_name {
+  font-size: 64px;
+  display: inline-block;
+  padding: 15px 0;
+}
+.meettheteam .middle .member_details .member_role {
+  font-size: 32px;
+  display: inline-block;
+  padding: 5px 10px 25px 5px;
+}
+.meettheteam .middle .member_details .member_description {
+  font-size: 32px;
+  display: block;
+}
+.meettheteam .left,
+.meettheteam .right {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.meettheteam .left .dv:hover,
+.meettheteam .right .dv:hover {
+  background: linear-gradient(#ee4266, #cd2145);
+}
+.meettheteam .left .dg:hover,
+.meettheteam .right .dg:hover {
+  background: linear-gradient(#6096ba, #39739a);
+}
+.meettheteam .left .cm:hover,
+.meettheteam .right .cm:hover {
+  background: linear-gradient(#065a82, #053c57);
+}
+.meettheteam .left .hm:hover,
+.meettheteam .right .hm:hover {
+  background: linear-gradient(#456990, #234871);
+}
+.meettheteam .left .member_button,
+.meettheteam .right .member_button {
+  flex-grow: 1;
+  transition: background 0.1s ease-out;
+  background: #323232;
+  border-radius: 10px;
+}
+.meettheteam .left .member_button:hover,
+.meettheteam .right .member_button:hover {
+  cursor: pointer;
+}
+.meettheteam .left .member_button h1,
+.meettheteam .right .member_button h1 {
+  font-size: 32px;
+  padding: 8px;
+}
+.meettheteam .left .member_button p,
+.meettheteam .right .member_button p {
+  font-size: 16px;
+  padding: 8px;
+  font-weight: 800;
+  color: #ffffffaa;
+}
+
+/*# sourceMappingURL=main.css.map */
